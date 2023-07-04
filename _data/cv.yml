@@ -1,32 +1,37 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+    - name: Name
+      value: Kun Yang
     - name: Languages
-      value: English, German
+      value: English, Mandarine
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D.
+      institution: University of Virginia, Charlottesville, USA
+      department: Electrical and computer engineering
+      advisor: Advisor：Prof. Cong Shen
+      year: 2020~now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Offline Reinforcement learning for wireless user scheduling
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Collected different quality datasets on an in house user scheduling simulator.
+            - Tested the performance of SOTA offline RL algorithms using the collected datasets.
+            - Designed a dataset mixture scheme to improve the training performance using sub-optimal quality datsets.
+        
+    - title: M.S.
+      institution: Texas A&M University, College Station, USA
+      department: Electrical engineering
+      advisor: Advisor：Prof. Tie Liu
+      year: 2017~2020
       description:
         - Description 1.
         - Description 2.
+    - title: B.S.
+      institution: Tsinghua University, Beijing, China
+      year: 2013~2017
 
 - title: Experience
   type: time_table
@@ -61,12 +66,6 @@
       institution: University of Zurich, Zurich, Switzerland
       year: 1909 - 1911
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
