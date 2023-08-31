@@ -33,20 +33,20 @@
       institution: University of Virginia, Charlottesville, USA
       year: 2020~now
       description:
-        -title : Reinforcement learning for wireless system optimization
-        contents:
-          - Designed a new structure of Multi-agent reinforcement learning for wireless user scheduling.
-          - Comprehensively tested the performance, transferability and robustness of MARL and centralized RL for wireless user scheduling.
-          - Tested the performance of SOTA offline RL algorithms for wireless user-scheduling problem.
-          - Designed a dataset mixture scheme to improve the training performance using sub-optimal quality datsets.
-          - Designed an ensemble scheme to improve the performance of dataset mixture for offline RL.
-          - Provided an insight on when the mixture of datasets will improve the performance of offline RL.
-          - Extended the offline RL framework to more general network optimization problems like network-slicing.
-        -title : Server-client collaboration in Federated learning
-        contents:
-          - Designed a new algorithm to make Server and Clients in Federated learning to work collaboratively.
-          - Proved the improved convergence speed of our algorithm with designed learning rate.
-          - Tested the performance of our algorithm with real-world dataset and edge-devices.
+        - title : Reinforcement learning for wireless system optimization
+          contents:
+            - Designed a new structure of Multi-agent reinforcement learning for wireless user scheduling.
+            - Comprehensively tested the performance, transferability and robustness of MARL and centralized RL for wireless user scheduling.
+            - Tested the performance of SOTA offline RL algorithms for wireless user-scheduling problem.
+            - Designed a dataset mixture scheme to improve the training performance using sub-optimal quality datsets.
+            - Designed an ensemble scheme to improve the performance of dataset mixture for offline RL.
+            - Provided an insight on when the mixture of datasets will improve the performance of offline RL.
+            - Extended the offline RL framework to more general network optimization problems like network-slicing.
+        - title : Server-client collaboration in Federated learning
+          contents:
+            - Designed a new algorithm to make Server and Clients in Federated learning to work collaboratively.
+            - Proved the improved convergence speed of our algorithm with designed learning rate.
+            - Tested the performance of our algorithm with real-world dataset and edge-devices.
     - title: Research Scientist Intern
       institution: Intel Corporation, Portland, USA
       year: 2021.05~2021.08
@@ -61,19 +61,19 @@
             - Enabled RL training scheme for network slicing resource allocation using Intel's in-house networkgym simulator.
             - Tested the performance of the SOTA algorithms under different network settings.
             - Boosted the performance of rule-based method for ~30% using RL agents.
-    -title: Research Scientist Intern
-     institution: Xsense.ai, San Diego, USA
-     year: 2021.05~2021.08
-     description:
-        - title: Deep learning based behavior prediction
-          contents:
-            - Designed a VectorNet+Residual network structure for behavior prediction. Achieved comparable performance with less parameters.
-            - Investigated the performance of different feature encoding mechanisms for behavior prediction.
-            - Re-implemented the SOTA behavior prediction algorithm TNT and VectorNet using Pytorch on a in-house dataset and delivered live demo.
-    -title: Research Scientist Intern
-     institution: Kneron, San Diego, USA
-     year: 2020.08~2020.12
-     description:
+    - title: Research Scientist Intern
+      institution: Xsense.ai, San Diego, USA
+      year: 2021.05~2021.08
+      description:
+      - title: Deep learning based behavior prediction
+        contents:
+          - Designed a VectorNet+Residual network structure for behavior prediction. Achieved comparable performance with less parameters.
+          - Investigated the performance of different feature encoding mechanisms for behavior prediction.
+          - Re-implemented the SOTA behavior prediction algorithm TNT and VectorNet using Pytorch on a in-house dataset and delivered live demo.
+    - title: Research Scientist Intern
+      institution: Kneron, San Diego, USA
+      year: 2020.08~2020.12
+      description:
         - title: Adaptive deep neural network quantization toolbox
           contents:
             - Surveyed and summarized the most recent and popular neural network quantization and compression methods and schemes.
@@ -86,9 +86,9 @@
         - title: Monitoring stack for machine learning system
           contents:
             - Worked with gaming analytics company, Mayhem, to build a robust monitoring stack.
-            - Launched whole system onto Mayhem’s real server system
-            - Deployed a clone of Mayhem’s server and the monitoring stack on to AWS with Terraform.
-            - Collected enhanced monitoring metrics from Mayhem’s RDS Mysql cluster using Prometheus.
+            - Launched whole system onto Mayhem's real server system
+            - Deployed a clone of Mayhem's server and the monitoring stack on to AWS with Terraform.
+            - Collected enhanced monitoring metrics from Mayhem's RDS Mysql cluster using Prometheus.
             - Designed a dashboard with Grafana that can accurately reflect resource allocation and usage of a RDS database and the error and slow query log flow.
             - Created alarms for potential spike traffic and resource shortage for the database.
     - title: Software Engineer Intern
