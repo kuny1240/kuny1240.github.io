@@ -14,43 +14,93 @@
       department: Electrical and computer engineering
       advisor: Prof. Cong Shen
       year: 2020~now
-      description:
-        - title: Offline Reinforcement learning for wireless user scheduling
-          contents:
-            - Collected different quality datasets on an in house user scheduling simulator.
-            - Tested the performance of SOTA offline RL algorithms using the collected datasets.
-            - Designed a dataset mixture scheme to improve the training performance using sub-optimal quality datsets.
-        - title: Collabarative Federated learning
-          contents:
-            - Designed a new algorithm to make Server and Clients in Federated learning to work collaboratively.
-            - Proved that in our structure, this server-client collaboration will have a faster convergence with designed learning rate.
-            - Tested with real-world dataset and edge-devices.
-        
+      
     - title: M.S.
       institution: Texas A&M University, College Station, USA
       department: Electrical engineering
       advisor: Prof. Tie Liu
       year: 2017~2020
-      description:
-        - Model-based reinforcement learning for network optimization.
+
     - title: B.S.
       institution: Tsinghua University, Beijing, China
+      department: Electrical engineering
       year: 2013~2017
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: University of Virginia, Charlottesville, USA
+      year: 2020~now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        -title : Reinforcement learning for wireless system optimization
+        contents:
+          - Designed a new structure of Multi-agent reinforcement learning for wireless user scheduling.
+          - Comprehensively tested the performance, transferability and robustness of MARL and centralized RL for wireless user scheduling.
+          - Tested the performance of SOTA offline RL algorithms for wireless user-scheduling problem.
+          - Designed a dataset mixture scheme to improve the training performance using sub-optimal quality datsets.
+          - Designed an ensemble scheme to improve the performance of dataset mixture for offline RL.
+          - Provided an insight on when the mixture of datasets will improve the performance of offline RL.
+          - Extended the offline RL framework to more general network optimization problems like network-slicing.
+        -title : Server-client collaboration in Federated learning
+        contents:
+          - Designed a new algorithm to make Server and Clients in Federated learning to work collaboratively.
+          - Proved the improved convergence speed of our algorithm with designed learning rate.
+          - Tested the performance of our algorithm with real-world dataset and edge-devices.
+    - title: Research Scientist Intern
+      institution: Intel Corporation, Portland, USA
+      year: 2021.05~2021.08
+      description:
+        - title: NS3-based communication simulator for OpenFL
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-  
+            - Co-designed the structure of NS3-based communication simulator for OpenFL.
+            - Enabled the Carla simulator to communicate with the NS3-based communication simulator under federated learning setting.
+            - Tested the performance of the SOTA FL algorithms under new communication module.
+        - title: Reinforcement learning for Network Slicing resource allocation
+          contents:
+            - Enabled RL training scheme for network slicing resource allocation using Intel's in-house networkgym simulator.
+            - Tested the performance of the SOTA algorithms under different network settings.
+            - Boosted the performance of rule-based method for ~30% using RL agents.
+    -title: Research Scientist Intern
+     institution: Xsense.ai, San Diego, USA
+     year: 2021.05~2021.08
+     description:
+        - title: Deep learning based behavior prediction
+          contents:
+            - Designed a VectorNet+Residual network structure for behavior prediction. Achieved comparable performance with less parameters.
+            - Investigated the performance of different feature encoding mechanisms for behavior prediction.
+            - Re-implemented the SOTA behavior prediction algorithm TNT and VectorNet using Pytorch on a in-house dataset and delivered live demo.
+    -title: Research Scientist Intern
+     institution: Kneron, San Diego, USA
+     year: 2020.08~2020.12
+     description:
+        - title: Adaptive deep neural network quantization toolbox
+          contents:
+            - Surveyed and summarized the most recent and popular neural network quantization and compression methods and schemes.
+            - Developed an adaptive tool box for deep neural network quantization that can automatically select the best quantization accuracy for different layers in pre-trained deep learning models.
+            - Quantized popular deep learning models with the toolbox that achieved less than 2% of accuracy loss with a roughly 50% computational cost reduction.
+    - title: Fellow
+      institution: Insight Data Science, San Francisco, USA
+      year: 2020.01~2020.03
+      description:
+        - title: Monitoring stack for machine learning system
+          contents:
+            - Worked with gaming analytics company, Mayhem, to build a robust monitoring stack.
+            - Launched whole system onto Mayhem’s real server system
+            - Deployed a clone of Mayhem’s server and the monitoring stack on to AWS with Terraform.
+            - Collected enhanced monitoring metrics from Mayhem’s RDS Mysql cluster using Prometheus.
+            - Designed a dashboard with Grafana that can accurately reflect resource allocation and usage of a RDS database and the error and slow query log flow.
+            - Created alarms for potential spike traffic and resource shortage for the database.
+    - title: Software Engineer Intern
+      institution: Xsense.ai, San Diego, USA
+      year: 2019.06~2019.09
+      description:
+        - title: Deep reinforcement learning based ramp merging control
+          contents:
+            - Developed a new feature for real traffic simulator that enabled the machine learning models to control the ego vehicle directly with C++ or Python scripts, which is used by the research team for the company.
+            - Created an API that allowed the ROS simulator to sample and log data with a particular frequency using python. This API reduced more than 80% of a potential memory waste caused by the ROS logging system.
+            - Designed a new reward function for the reinforcement learning ramp merging that treated safety as a part of reward instead of a hardcoded boundary while still maintain a hard boundary like behavior during training.
+            - Built a DDPG agent based on Tensorflow using python. The agent was able to achieve a 0.24% collision rate with our reward function, comparable to the state-of-art method S-T optimizer.
 
 - title: Academic Interests
   type: nested_list
