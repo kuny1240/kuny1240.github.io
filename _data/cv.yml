@@ -110,10 +110,10 @@
         - Reinforcement learning for network optimization
         - General reinforcement learning/Bandit system
         - Offline reinforcement learning
-    -title: LLM Fine-tuning
+    - title: LLM Fine-tuning
       items:
-        - Prompt engineering with LLM
-        - Effective LLM fine-tuning with quantization
+        - Prompt Engineering with LLM
+        - Effective LLM Fine-tuning with quantization.
     - title: Federated learning
       items:
         - More efficient federated learning algorithms.
