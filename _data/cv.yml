@@ -33,6 +33,12 @@
       institution: University of Virginia, Charlottesville, USA
       year: 2020~now
       description:
+        - title : Best Arm Identification for Prompt Learning under a Limited Budget
+          contents:
+            - Built the connection between the prompt learning problem for large language models and the best arm identification problem in multi-armed bandit.
+            - Proposed a general scheme to solve the prompt learning problem with a limited budget.
+            - Provided two context-based algorithms for prompt learning with a limited budget using clustering and function approxiamtion.
+            - Tested the performance of the proposed algorithms over diversed tasks and different LLMs (both black box and white box).
         - title : Reinforcement learning for wireless system optimization
           contents:
             - Designed a new structure of Multi-agent reinforcement learning for wireless user scheduling.
@@ -118,9 +124,3 @@
       items:
         - More efficient federated learning algorithms.
         - Federated reinforcement learning
-
-- title: Other Interests
-  type: list
-  contents:
-    - Basketball
-    - Video Games
