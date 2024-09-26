@@ -3,8 +3,7 @@
   contents:
     - name: Name
       value: Kun Yang
-    - name: Languages
-      value: English, Mandarine
+    - name: Sr. Data Scientist
 
 - title: Education
   type: time_table
@@ -13,7 +12,7 @@
       institution: University of Virginia, Charlottesville, USA
       department: Electrical and computer engineering
       advisor: Prof. Cong Shen
-      year: 2020~now
+      year: 2020~2024
       
     - title: M.S.
       institution: Texas A&M University, College Station, USA
@@ -29,9 +28,16 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Sr. Data Scientist
+      institution: Juniper Networks.
+      year: 2024~now
+      description:
+      - title: Auto channel allocation for AFC-enabled 6G WIFI devices
+        contents: Building the pipeline to optimize the channel selection procedure.
+      - title: RL based band and bandwidth selection for WIFI-7 devices.
     - title: Research Assistant
       institution: University of Virginia, Charlottesville, USA
-      year: 2020~now
+      year: 2020~2024
       description:
         - title : Best Arm Identification for Prompt Learning under a Limited Budget
           contents:
