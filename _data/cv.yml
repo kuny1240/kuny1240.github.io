@@ -3,7 +3,7 @@
   contents:
     - name: Name
       value: Kun Yang
-    - name: Sr. Data Scientist
+    - name: Sr. Data Scientist, Juniper Networks
 
 - title: Education
   type: time_table
@@ -30,14 +30,14 @@
   contents:
     - title: Sr. Data Scientist
       institution: Juniper Networks.
-      year: 2024~now
+      year: 2024.8~now
       description:
       - title: Auto channel allocation for AFC-enabled 6G WIFI devices
-        contents: Building the pipeline to optimize the channel selection procedure.
-      - title: RL based band and bandwidth selection for WIFI-7 devices.
+        contents: 
+        - Built the whole pipeline to handle the data flow, auto channel allocation, and error handling for the AFC-enabled 6G WIFI devices.
     - title: Research Assistant
       institution: University of Virginia, Charlottesville, USA
-      year: 2020~2024
+      year: 2020.8~2024.8
       description:
         - title : Best Arm Identification for Prompt Learning under a Limited Budget
           contents:
