@@ -3,7 +3,7 @@
   contents:
     - name: Name
       value: Kun Yang
-    - name: Sr. Data Scientist, Juniper Networks
+    - name: Software and Machine Learning Engineer, Google
 
 - title: Education
   type: time_table
@@ -28,9 +28,15 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Software and Machine Learning Engineer
+      institution: Google.
+      year: 2025.03~now
+      description:
+        - title: Working on LLM based code optimization problems.
+          contents: []
     - title: Sr. Data Scientist
       institution: Juniper Networks.
-      year: 2024.8~now
+      year: 2024.8~2025.03
       description:
       - title: Auto channel allocation for AFC-enabled 6G WIFI devices
         contents: 
@@ -119,9 +125,7 @@
   contents:
     - title: Reinforcement learning
       items: 
-        - Reinforcement learning for network optimization
-        - General reinforcement learning/Bandit system
-        - Offline reinforcement learning
+        - Reinforcement learning for code optimization
     - title: LLM Fine-tuning
       items:
         - Prompt Engineering with LLM
