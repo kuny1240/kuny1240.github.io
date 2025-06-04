@@ -17,20 +17,23 @@ $green-color-lime:    #B7D12A !default;
 $green-color-dark:    #009f06 !default;
 $green-color-light:   #ddffdd !default;
 $green-color-bright:  #11D68B !default;
-$purple-color:        #B509AC !default;
+$purple-color:        #007bff !default; // Bootstrap's primary blue
 $light-purple-color:  lighten($purple-color, 25%);
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
 $yellow-color:        #efcc00 !default;
 
-$grey-color:          #828282 !default;
-$grey-color-light:    lighten($grey-color, 40%);
-$grey-color-dark:     #1C1C1D;
+$grey-color:          #f8f9fa !default; // Bootstrap's light gray
+$grey-color-light:    lighten($grey-color, 10%); // Adjusted for new base
+$grey-color-dark:     darken($grey-color, 75%); // Adjusted for new base, ensuring it's dark enough for dark mode bg
 $grey-900:            #212529;
 
 $white-color: #ffffff !default;
-$black-color: #000000 !default;
+$black-color: #212529 !default; // Bootstrap's dark gray (softer black)
 
+// Accent colors
+$teal-color: #20c997 !default; // A teal accent color
+$vibrant-orange-color: #ff6f00 !default; // A vibrant orange accent color
 
 // Theme colors
 

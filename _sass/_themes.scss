@@ -3,19 +3,19 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{$white-color};
+  --global-bg-color: #{$white-color}; // Light theme: Use white or a very light gray.
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
+  --global-text-color: #{$black-color}; // Light theme: Use the new softer black.
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #{$purple-color}; // Light theme: Use the new dark blue.
+  --global-hover-color: #{lighten($purple-color, 10%)}; // Light theme: Use a slightly lighter shade of the new dark blue.
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
+  --global-footer-bg-color: #{$grey-color-dark}; // Keep or adjust based on new palette
+  --global-footer-text-color: #{$grey-color-light}; // Keep or adjust based on new palette
+  --global-footer-link-color: #{$white-color}; // Keep or adjust based on new palette
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #{$white-color};
+  --global-card-bg-color: #{$white-color}; // Light theme: background for cards
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -48,19 +48,19 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #{$grey-color-dark}; // Dark theme: Use a dark gray, not pure black.
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
+  --global-text-color: #{$grey-color-light}; // Dark theme: Use a light gray.
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #{$teal-color}; // Dark theme: Use a lighter shade of the new dark blue or a contrasting accent color (e.g., teal).
+  --global-hover-color: #{lighten($teal-color, 10%)}; // Dark theme: Use a slightly lighter shade of the dark theme's theme color.
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #{$black-color}; // Adjusted for new dark theme
+  --global-footer-text-color: #{$grey-color-light}; // Adjusted for new dark theme
+  --global-footer-link-color: #{$teal-color}; // Adjusted for new dark theme
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #424246; // Keep or adjust
+  --global-card-bg-color: #{$grey-900}; // Dark theme: background for cards
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

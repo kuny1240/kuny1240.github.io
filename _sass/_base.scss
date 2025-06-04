@@ -4,7 +4,12 @@
 
 // Typography
 
-p,
+body { // Added body selector for font-family
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--global-text-color);
+}
+
+p, // Modified existing p selector
 h1,
 h2,
 h3,
@@ -18,6 +23,15 @@ span,
 strong {
   color: var(--global-text-color);
 }
+
+// Added specific heading styles (font-size, weight) - these were not present in original _base.scss for this subtask
+h1 { font-size: 2.5rem; font-weight: 600; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+h4 { font-size: 1.5rem; font-weight: 600; }
+h5 { font-size: 1.25rem; font-weight: 600; }
+h6 { font-size: 1rem; font-weight: 600; }
+
 
 hr {
   border-top: 1px solid var(--global-divider-color);
@@ -37,15 +51,16 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  transition: color 0.2s ease-in-out; // Added transition for general links
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color); // Ensure hover uses the global hover color
     text-decoration: underline;
   }
 
-  &:hover:after :not(.nav-item.dropdown) {
-    width: 100%;
-  }
+  // &:hover:after :not(.nav-item.dropdown) { // This selector was problematic and commented out previously
+  //   width: 100%;
+  // }
 }
 
 .table-dark {
@@ -85,6 +100,16 @@ blockquote {
 
 .card {
   background-color: var(--global-card-bg-color);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; // Added transition for card hover effect
+
+  &:hover { // Added hover effect for card
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    // For dark theme, a lighter shadow might be needed, e.g. using var(--global-divider-color) or a specific shadow variable
+    // html[data-theme='dark'] & {
+    //   box-shadow: 0 4px 8px var(--global-divider-color); // Example for dark theme
+    // }
+  }
 
   img {
     width: 100%;
@@ -92,11 +117,12 @@ blockquote {
 
   .card-title {
     color: var(--global-text-color);
+    transition: color 0.2s ease-in-out; // Added transition for card title
   }
 
-  .card-item {
+  .card-item { // First .card-item instance
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1rem; // Standardized margin
 
     .row {
       display: flex;
@@ -150,7 +176,7 @@ blockquote {
 }
 
 .post-description {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; // Standardized margin
   font-size: 0.875rem;
 
   a {
@@ -171,6 +197,8 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .navbar .dropdown-menu {
@@ -212,6 +240,7 @@ blockquote {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    transition: color 0.2s ease-in-out; // Added transition for navbar links
 
     &:hover {
       color: var(--global-hover-color);
@@ -334,8 +363,8 @@ footer.fixed-bottom {
 
   .container {
     color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    padding-top: 15px; // Increased padding
+    padding-bottom: 15px; // Increased padding
   }
 
   a {
@@ -395,8 +424,8 @@ footer.sticky-bottom {
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem; // Adjusted padding
+  padding-bottom: 2.5rem; // Adjusted padding
 
   h1 {
     color: var(--global-theme-color);
@@ -437,8 +466,8 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.5rem; // Increased padding
+    padding-bottom: 2.5rem; // Increased padding
 
     .post-meta {
       color: var(--global-text-color-light);
@@ -519,9 +548,9 @@ footer.sticky-bottom {
     }
   }
 
-  .card-item {
+  .card-item { // Second .card-item instance (under .projects)
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1rem; // Standardized margin
 
     .row {
       display: flex;
@@ -532,7 +561,7 @@ footer.sticky-bottom {
   .grid-sizer,
   .grid-item {
     width: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem; // Standardized margin
   }
 
   h2.category {
@@ -540,7 +569,7 @@ footer.sticky-bottom {
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; // Standardized margin
     text-align: right;
   }
 }
@@ -560,7 +589,7 @@ footer.sticky-bottom {
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; // Standardized margin
 
     span {
       font-size: 1.5rem;
@@ -582,7 +611,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem; // Standardized margin
 
       .preview {
         width: 100%;
@@ -655,10 +684,12 @@ footer.sticky-bottom {
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out; // Added transition for publication buttons
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-hover-text-color); // Ensure text color contrasts with hover bg
+            border-color: var(--global-hover-color);
+            background-color: var(--global-hover-color); // Added background change
           }
         }
       }
@@ -896,6 +927,7 @@ progress::-moz-progress-bar {
       background-color: var(--global-hover-color) !important;
       color: var(--global-hover-text-color) !important;
     }
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; // Added transition for dropdown toggle
   }
 
   .dropdown-menu {
@@ -1023,8 +1055,8 @@ nav[data-toggle="toc"] {
     }
   }
 
-  .card-item {
-    margin-bottom: 10px;
+  .card-item { // Third .card-item instance (under .featured-posts)
+    margin-bottom: 1rem; // Standardized margin
   }
 
   .post-meta {
