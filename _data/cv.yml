@@ -30,7 +30,7 @@
   type: time_table
   contents:
     - title: Machine Learning Engineer
-      institution: Google, Cupertino, CA
+      institution: Google, Sunnyvale, CA
       year: 2025.03~now
       description:
         - title: Agentic AI systems for LLM based code optimization
@@ -40,7 +40,7 @@
             - Built a code similarity retrieval pipeline by fine-tuning an internal embedding model, significantly improving code retrieval performance.
             - Explored and developed an agentic-based pipeline for automated opportunity retrieval, code optimization, and result validation.
     - title: Sr. Data Science Engineer
-      institution: Juniper Networks, Sunnyvale, CA
+      institution: Juniper Networks, Cupertino, CA
       year: 2024.8~2025.03
       description:
       - title: Radio Resource Management for AFC-enabled 6 GHz WiFi devices
@@ -138,6 +138,7 @@
     - title: Agentic AI systems
       items:
         - Agentic pipelines for automated code optimization
+        - Building evals and RL environments for agentic AI, especially long-horizon persistent tasks
     - title: Reinforcement learning
       items:
         - Reinforcement learning for code optimization
