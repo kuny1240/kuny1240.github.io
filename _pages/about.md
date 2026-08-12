@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! I'm Kun Yang, a Software Engineer at Google, working on LLM based code optimization. Before joining Google, I was a Senior Data Scientist at Juniper Networks. I received my Ph.D. from the University of Virginia (UVA) in 2024, where I worked under the guidance of Professor [Cong Shen](https://engineering.virginia.edu/faculty/cong-shen). My research interests include reinforcement learning, prompt optimization for large language models (LLMs), and federated learning. I welcome collaboration and discussions with those who share these research interests.
+Hello! I'm Kun Yang, a Machine Learning Engineer at Google, where I build agentic AI systems for LLM based code optimization — from AlphaEvolve-based pipelines that automatically discover and validate code efficiency improvements, to coding-efficiency benchmarks used in Gemini post-training. Before joining Google, I was a Senior Data Science Engineer at Juniper Networks. I received my Ph.D. from the University of Virginia (UVA) in 2024, where I worked under the guidance of Professor [Cong Shen](https://engineering.virginia.edu/faculty/cong-shen). My research interests include agentic AI systems, prompt optimization for large language models (LLMs), reinforcement learning, and federated learning. I welcome collaboration and discussions with those who share these research interests.
 
 For a deeper dive into my research work and publications, check out the [publications](/publications/) and [cv](/cv/) pages. If you are curious about my life outside of work, take a look at the [misc](/misc/) page.
 

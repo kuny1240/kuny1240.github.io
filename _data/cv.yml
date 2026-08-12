@@ -4,7 +4,7 @@
     - name: Name
       value: Kun Yang
     - name: Position
-      value: Software and Machine Learning Engineer, Google
+      value: Machine Learning Engineer, Google
 
 - title: Education
   type: time_table
@@ -19,7 +19,7 @@
       institution: Texas A&M University, College Station, USA
       department: Electrical engineering
       advisor: Prof. Tie Liu
-      year: 2017~2020
+      year: 2017~2019
 
     - title: B.S.
       institution: Tsinghua University, Beijing, China
@@ -29,19 +29,23 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Software and Machine Learning Engineer
-      institution: Google.
+    - title: Machine Learning Engineer
+      institution: Google, Cupertino, CA
       year: 2025.03~now
       description:
-        - title: Working on LLM based code optimization problems.
-          contents: []
-    - title: Sr. Data Scientist
-      institution: Juniper Networks.
+        - title: Agentic AI systems for LLM based code optimization
+          contents:
+            - Introduced an AlphaEvolve-based agentic system into the codebase, generating microbenchmarks and optimizations that saved over 1 million compute units.
+            - Designed and owned a synthetic coding-efficiency benchmark, adopted as a training task in Gemini post-training and as a standard evaluation workload.
+            - Built a code similarity retrieval pipeline by fine-tuning an internal embedding model, significantly improving code retrieval performance.
+            - Explored and developed an agentic-based pipeline for automated opportunity retrieval, code optimization, and result validation.
+    - title: Sr. Data Science Engineer
+      institution: Juniper Networks, Sunnyvale, CA
       year: 2024.8~2025.03
       description:
-      - title: Auto channel allocation for AFC-enabled 6G WIFI devices
-        contents: 
-        - Built the whole pipeline to handle the data flow, auto channel allocation, and error handling for the AFC-enabled 6G WIFI devices.
+      - title: Radio Resource Management for AFC-enabled 6 GHz WiFi devices
+        contents:
+        - Led the development of a full-stack Radio Resource Management (RRM) system for the company's Automated Frequency Coordination (AFC) function, covering data flow, auto channel allocation, and error handling.
     - title: Research Assistant
       institution: University of Virginia, Charlottesville, USA
       year: 2020.8~2024.8
@@ -121,11 +125,21 @@
             - Designed a new reward function for the reinforcement learning ramp merging that treated safety as a part of reward instead of a hardcoded boundary while still maintain a hard boundary like behavior during training.
             - Built a DDPG agent based on Tensorflow using python. The agent was able to achieve a 0.24% collision rate with our reward function, comparable to the state-of-art method S-T optimizer.
 
+- title: Honors and Awards
+  type: list
+  contents:
+    - IEEE Asilomar 2024 Best Student Paper Finalist
+    - IEEE DySPAN 2024 Student Travel Grant
+    - NSF Spectrum Week 2023 Student Travel Award
+
 - title: Academic Interests
   type: nested_list
   contents:
+    - title: Agentic AI systems
+      items:
+        - Agentic pipelines for automated code optimization
     - title: Reinforcement learning
-      items: 
+      items:
         - Reinforcement learning for code optimization
     - title: LLM Fine-tuning
       items:
