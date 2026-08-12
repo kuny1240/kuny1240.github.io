@@ -3,7 +3,8 @@
   contents:
     - name: Name
       value: Kun Yang
-    - name: Software and Machine Learning Engineer, Google
+    - name: Position
+      value: Software and Machine Learning Engineer, Google
 
 - title: Education
   type: time_table
