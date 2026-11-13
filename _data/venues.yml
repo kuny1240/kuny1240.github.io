@@ -1,6 +1,39 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#6b21a8"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#0f766e"
+
+"IEEE TWC":
+  url: https://www.comsoc.org/publications/journals/ieee-twc
+  color: "#1d4ed8"
+
+"IEEE JSAC":
+  url: https://www.comsoc.org/publications/journals/ieee-jsac
+  color: "#1e40af"
+
+"IEEE TSP":
+  url: https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing
+  color: "#0369a1"
+
+"DySPAN":
+  url: https://dyspan2024.ieee-dyspan.org/
+  color: "#0284c7"
+
+"Asilomar":
+  url: https://www.asilomarssc.org/
+  color: "#b45309"
+
+"CISS":
+  url: https://ciss.ee.princeton.edu/
+  color: "#475569"
+
+"INFOCOM":
+  url: https://infocom.info/
+  color: "#334155"
+
+"Preprint":
+  url: https://scholar.google.com/citations?user=-BzQrlgAAAAJ&hl=en&oi=ao
+  color: "#64748b"
