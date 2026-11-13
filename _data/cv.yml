@@ -3,134 +3,143 @@
   contents:
     - name: Name
       value: Kun Yang
-    - name: Software and Machine Learning Engineer, Google
-
-- title: Education
-  type: time_table
-  contents:
-    - title: Ph.D.
-      institution: University of Virginia, Charlottesville, USA
-      department: Electrical and computer engineering
-      advisor: Prof. Cong Shen
-      year: 2020~2024
-      
-    - title: M.S.
-      institution: Texas A&M University, College Station, USA
-      department: Electrical engineering
-      advisor: Prof. Tie Liu
-      year: 2017~2020
-
-    - title: B.S.
-      institution: Tsinghua University, Beijing, China
-      department: Electrical engineering
-      year: 2013~2017
+    - name: Role
+      value: "Machine Learning Engineer, Google"
+    - name: Location
+      value: "Cupertino / Sunnyvale, CA"
+    - name: Email
+      value: kuny1240@gmail.com
+    - name: Links
+      value: '<a href="https://scholar.google.com/citations?user=-BzQrlgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a> · <a href="https://github.com/kuny1240" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/kunyang1240/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://dblp.org/pid/63/1587-11.html" target="_blank" rel="noopener noreferrer">DBLP</a>'
 
 - title: Experience
   type: time_table
   contents:
-    - title: Software and Machine Learning Engineer
-      institution: Google.
-      year: 2025.03~now
+    - title: Machine Learning Engineer
+      institution: "Google · Sunnyvale, CA"
+      year: "Mar. 2025 – Present"
       description:
-        - title: Working on LLM based code optimization problems.
-          contents: []
-    - title: Sr. Data Scientist
-      institution: Juniper Networks.
-      year: 2024.8~2025.03
-      description:
-      - title: Auto channel allocation for AFC-enabled 6G WIFI devices
-        contents: 
-        - Built the whole pipeline to handle the data flow, auto channel allocation, and error handling for the AFC-enabled 6G WIFI devices.
-    - title: Research Assistant
-      institution: University of Virginia, Charlottesville, USA
-      year: 2020.8~2024.8
-      description:
-        - title : Best Arm Identification for Prompt Learning under a Limited Budget
+        - title: "Recursive Self-Improvement (RSI) for Inference"
           contents:
-            - Built the connection between the prompt learning problem for large language models and the best arm identification problem in multi-armed bandit.
-            - Proposed a general scheme to solve the prompt learning problem with a limited budget.
-            - Provided two context-based algorithms for prompt learning with a limited budget using clustering and function approxiamtion.
-            - Tested the performance of the proposed algorithms over diversed tasks and different LLMs (both black box and white box).
-        - title : Reinforcement learning for wireless system optimization
+            - "Designed and architected autonomous iterative search and hill-climbing workflows to optimize LLM decoding and serving efficiency at scale."
+        - title: "RL Environments & Coding-Efficiency Post-Training"
           contents:
-            - Designed a new structure of Multi-agent reinforcement learning for wireless user scheduling.
-            - Comprehensively tested the performance, transferability and robustness of MARL and centralized RL for wireless user scheduling.
-            - Tested the performance of SOTA offline RL algorithms for wireless user-scheduling problem.
-            - Designed a dataset mixture scheme to improve the training performance using sub-optimal quality datsets.
-            - Designed an ensemble scheme to improve the performance of dataset mixture for offline RL.
-            - Provided an insight on when the mixture of datasets will improve the performance of offline RL.
-            - Extended the offline RL framework to more general network optimization problems like network-slicing.
-        - title : Server-client collaboration in Federated learning
+            - "Built scalable reinforcement learning environments and microbenchmark generation systems producing challenging, efficiency-oriented coding tasks for Gemini evaluation and post-training."
+        - title: "Self-Evolving Multi-Agent Code Optimization"
           contents:
-            - Designed a new algorithm to make Server and Clients in Federated learning to work collaboratively.
-            - Proved the improved convergence speed of our algorithm with designed learning rate.
-            - Tested the performance of our algorithm with real-world dataset and edge-devices.
-    - title: Research Scientist Intern
-      institution: Intel Corporation, Portland, USA
-      year: 2021.05~2021.08
-      description:
-        - title: NS3-based communication simulator for OpenFL
-          contents:
-            - Co-designed the structure of NS3-based communication simulator for OpenFL.
-            - Enabled the Carla simulator to communicate with the NS3-based communication simulator under federated learning setting.
-            - Tested the performance of the SOTA FL algorithms under new communication module.
-        - title: Reinforcement learning for Network Slicing resource allocation
-          contents:
-            - Enabled RL training scheme for network slicing resource allocation using Intel's in-house networkgym simulator.
-            - Tested the performance of the SOTA algorithms under different network settings.
-            - Boosted the performance of rule-based method for ~30% using RL agents.
-    - title: Research Scientist Intern
-      institution: Xsense.ai, San Diego, USA
-      year: 2021.05~2021.08
-      description:
-      - title: Deep learning based behavior prediction
-        contents:
-          - Designed a VectorNet+Residual network structure for behavior prediction. Achieved comparable performance with less parameters.
-          - Investigated the performance of different feature encoding mechanisms for behavior prediction.
-          - Re-implemented the SOTA behavior prediction algorithm TNT and VectorNet using Pytorch on a in-house dataset and delivered live demo.
-    - title: Research Scientist Intern
-      institution: Kneron, San Diego, USA
-      year: 2020.08~2020.12
-      description:
-        - title: Adaptive deep neural network quantization toolbox
-          contents:
-            - Surveyed and summarized the most recent and popular neural network quantization and compression methods and schemes.
-            - Developed an adaptive tool box for deep neural network quantization that can automatically select the best quantization accuracy for different layers in pre-trained deep learning models.
-            - Quantized popular deep learning models with the toolbox that achieved less than 2% of accuracy loss with a roughly 50% computational cost reduction.
-    - title: Fellow
-      institution: Insight Data Science, San Francisco, USA
-      year: 2020.01~2020.03
-      description:
-        - title: Monitoring stack for machine learning system
-          contents:
-            - Worked with gaming analytics company, Mayhem, to build a robust monitoring stack.
-            - Launched whole system onto Mayhem's real server system
-            - Deployed a clone of Mayhem's server and the monitoring stack on to AWS with Terraform.
-            - Collected enhanced monitoring metrics from Mayhem's RDS Mysql cluster using Prometheus.
-            - Designed a dashboard with Grafana that can accurately reflect resource allocation and usage of a RDS database and the error and slow query log flow.
-            - Created alarms for potential spike traffic and resource shortage for the database.
-    - title: Software Engineer Intern
-      institution: Xsense.ai, San Diego, USA
-      year: 2019.06~2019.09
-      description:
-        - title: Deep reinforcement learning based ramp merging control
-          contents:
-            - Developed a new feature for real traffic simulator that enabled the machine learning models to control the ego vehicle directly with C++ or Python scripts, which is used by the research team for the company.
-            - Created an API that allowed the ROS simulator to sample and log data with a particular frequency using python. This API reduced more than 80% of a potential memory waste caused by the ROS logging system.
-            - Designed a new reward function for the reinforcement learning ramp merging that treated safety as a part of reward instead of a hardcoded boundary while still maintain a hard boundary like behavior during training.
-            - Built a DDPG agent based on Tensorflow using python. The agent was able to achieve a 0.24% collision rate with our reward function, comparable to the state-of-art method S-T optimizer.
+            - "Built multi-agent search, review, and debate workflows with persistent cross-agent harness memory and fine-tuned code-similarity retrieval embeddings for automated code efficiency optimization."
 
-- title: Academic Interests
+    - title: Sr. Data Science Engineer
+      institution: "Juniper Networks · Cupertino, CA"
+      year: "Jul. 2024 – Mar. 2025"
+      description:
+        - title: "Automated Frequency Coordination (AFC) & Radio Resource Management"
+          contents:
+            - "Led architecture and full-stack development of the Radio Resource Management (RRM) system supporting AFC for 6GHz Wi-Fi devices."
+            - "Built the cloud-to-device data channel for automatic frequency requests, allocation, and adjustment, and validated automated local RRM responses to anomalous network behavior."
+
+    - title: Graduate Research Assistant
+      institution: "University of Virginia · Charlottesville, VA"
+      year: "Aug. 2020 – Aug. 2024"
+      description:
+        - title: "Efficient Prompt Optimization for LLMs (NeurIPS 2024, Co-First Author)"
+          contents:
+            - "Formulated prompt selection as a fixed-budget best-arm identification problem and developed query-efficient clustering and function-approximation algorithms, improving selection efficiency by 25% and overall budget efficiency by over 50%."
+        - title: "Reinforcement Learning for Wireless Resource Scheduling (with Intel)"
+          contents:
+            - "Designed dataset-mixture and ensemble offline RL methods to learn from suboptimal logged data and extended the framework to RAN network slicing (~30% fewer SLA violations with ~5% additional bandwidth on Intel's simulator; published in IEEE TWC, DySPAN, and Asilomar 2024 Best Student Paper Finalist)."
+        - title: "Server-Client Collaborative Training in Federated Learning (IEEE JSAC, First Author)"
+          contents:
+            - "Developed a hybrid server-client collaborative training algorithm, proved faster convergence rates, and validated on real-world datasets and NVIDIA Jetson edge devices."
+
+    - title: Research Intern
+      institution: "Intel Corporation · Portland, OR"
+      year: "May 2022 – Aug. 2022"
+      description:
+        - title: "Network Slicing RL & Vehicular Federated Learning Simulation"
+          contents:
+            - "Enabled RL training and algorithm evaluation for network slicing resource allocation in Intel's NetworkGym simulator, outperforming rule-based baselines by ~30%."
+            - "Co-designed an NS-3 vehicular wireless communication simulator integrated with OpenFL and CARLA to study federated learning convergence with mobile clients."
+
+    - title: Research Intern
+      institution: "Xsense.ai · San Diego, CA"
+      year: "Jun. 2021 – Aug. 2021"
+      description:
+        - title: "Deep Learning Based Autonomous Driving Behavior Prediction"
+          contents:
+            - "Designed a VectorNet + residual network behavior predictor achieving comparable accuracy with fewer parameters; reimplemented TNT and VectorNet in PyTorch on an in-house dataset and delivered a live demo."
+
+    - title: Research Scientist Intern
+      institution: "Kneron · San Diego, CA"
+      year: "Aug. 2020 – Dec. 2020"
+      description:
+        - title: "Adaptive Deep Neural Network Quantization Toolbox"
+          contents:
+            - "Built an adaptive quantization toolbox automatically selecting per-layer precision for pre-trained models, reducing computational cost by ~50% with less than 2% accuracy loss."
+
+    - title: Fellow
+      institution: "Insight Data Science · San Francisco, CA"
+      year: "Jan. 2020 – Mar. 2020"
+      description:
+        - title: "Production Database & ML Infrastructure Monitoring"
+          contents:
+            - "Built and deployed an AWS, Terraform, Prometheus, and Grafana production RDS MySQL monitoring and alerting stack for gaming analytics company Mayhem."
+
+    - title: Software Engineer Intern
+      institution: "Xsense.ai · San Diego, CA"
+      year: "Jun. 2019 – Aug. 2019"
+      description:
+        - title: "Deep Reinforcement Learning for Autonomous Ramp Merging"
+          contents:
+            - "Designed a safety-aware reward function and TensorFlow DDPG agent achieving a 0.24% collision rate comparable to the S-T optimizer, plus a Python/ROS sampling API cutting logging memory overhead by over 80%."
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Electrical Engineering
+      institution: "University of Virginia, Charlottesville, VA"
+      advisor: Prof. Cong Shen
+      year: "Aug. 2020 – Aug. 2024"
+
+    - title: M.S. in Electrical Engineering
+      institution: "Texas A&M University, College Station, TX"
+      advisor: Prof. Tie Liu
+      year: "Aug. 2017 – Dec. 2019"
+
+    - title: B.E. in Electrical and Information Science
+      institution: "Tsinghua University, Beijing, China"
+      year: "Aug. 2013 – Jul. 2017"
+
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Reinforcement learning
-      items: 
-        - Reinforcement learning for code optimization
-    - title: LLM Fine-tuning
+    - title: LLM Systems
       items:
-        - Prompt Engineering with LLM
-        - Effective LLM Fine-tuning with quantization.
-    - title: Federated learning
+        - "Multi-agent systems & self-evolving code optimization harnesses"
+        - "Recursive self-improvement (RSI) & autonomous search workflows"
+        - "LLM decoding & serving efficiency optimization"
+        - "RL environments, microbenchmark generation & post-training evaluation"
+        - "Bandit-based prompt optimization"
+    - title: Machine Learning
       items:
-        - More efficient federated learning algorithms.
-        - Federated reinforcement learning
+        - "Offline & multi-agent reinforcement learning"
+        - "Federated learning & collaborative edge training"
+        - "Model compression & adaptive quantization"
+    - title: Languages & Tools
+      items:
+        - "Python, C++, MATLAB, PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, NS-3, AWS, Terraform"
+
+- title: Awards & Academic Service
+  type: nested_list
+  contents:
+    - title: Awards
+      items:
+        - "IEEE Asilomar 2024 Best Student Paper Finalist"
+        - "IEEE DySPAN 2024 Student Travel Grant"
+        - "NSF Spectrum Week 2023 Student Travel Award"
+    - title: Journal Reviewer
+      items:
+        - "IEEE JSAC (Special Issue on Distributed Learning over Wireless Edge Networks), IEEE TWC, IEEE TCCN, IEEE TGCN, IEEE TMLCN, IEEE TNSE, IEEE WCL"
+    - title: Conference Reviewer
+      items:
+        - "IEEE Asilomar (2022, 2023), IEEE ICC 2023, IEEE CISS 2023, IEEE Milcom 2022, WiOpt 2022"
