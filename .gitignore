@@ -9,4 +9,6 @@ _site
 Gemfile.lock
 vendor
 .worktrees/
+ruby-installer.exe
+.superpowers/
 

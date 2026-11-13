@@ -1066,3 +1066,99 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+// About Quick Links & Selected Projects Focus Grid
+.about-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.75rem;
+
+  a.quick-link-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--global-divider-color);
+    background-color: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+    i {
+      color: var(--global-theme-color);
+      font-size: 0.92rem;
+    }
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.selected-projects-section {
+  clear: both;
+  margin: 1.75rem 0 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+  }
+}
+
+.selected-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-focus-card {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-top: 3px solid var(--global-theme-color);
+  border-radius: 0.5rem;
+  padding: 1rem 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--global-theme-color);
+  }
+
+  .project-focus-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0;
+    color: var(--global-text-color);
+  }
+
+  p {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--global-text-color-light);
+  }
+}
+
