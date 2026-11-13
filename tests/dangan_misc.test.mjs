@@ -53,6 +53,20 @@ test('dangan_misc.js guards unloaded background image during snapshot and misc.c
   assert.ok(miscMd.includes('/assets/img/misc/trial_courtroom_bg.jpg'));
 });
 
+test('dossier-stage restores text selection inside revealed E-Handbook', () => {
+  const cssSrc = fs.readFileSync(path.join(ROOT, 'assets/css/dangan_misc.css'), 'utf8');
+  const dossierBlock = cssSrc.match(/\.dossier-stage\s*\{[^}]*\}/);
+  assert.ok(dossierBlock, 'Missing .dossier-stage rule');
+  assert.match(dossierBlock[0], /user-select:\s*text/, '.dossier-stage must override parent user-select: none with user-select: text');
+});
+
+test('narrow mobile breakpoint (<480px) prevents bottom HUD collision', () => {
+  const cssSrc = fs.readFileSync(path.join(ROOT, 'assets/css/dangan_misc.css'), 'utf8');
+  const narrowMedia = cssSrc.match(/@media\s*\(\s*max-width:\s*480px\s*\)\s*\{[\s\S]*?\n\}/);
+  assert.ok(narrowMedia, 'Missing @media (max-width: 480px) rule for narrow phones');
+  assert.match(narrowMedia[0], /\.speaker-parallelogram\s*\{[^}]*display:\s*none/, 'Must hide decorative .speaker-parallelogram on <=480px screens to prevent HUD collision');
+});
+
 test('entire repository passes final compliance leak scan', () => {
   assert.deepEqual(scanRepoForLeaks(ROOT), []);
 });

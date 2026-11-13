@@ -501,6 +501,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .dossier-banner-blur {
@@ -893,5 +895,20 @@
 
   .dossier-grid-2 {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .kotodama-slash-bar {
+    min-width: 155px;
+    padding: 0.35rem 0.65rem 0.35rem 0.55rem;
+  }
+
+  .kotodama-bullet-name {
+    font-size: 0.76rem;
+  }
+
+  .speaker-parallelogram {
+    display: none;
   }
 }
