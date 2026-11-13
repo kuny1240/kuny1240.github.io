@@ -9,7 +9,7 @@ const ROOT = process.cwd();
 
 test('cv.yml includes synced 2026 sections, corrected dates, and compliance-safe Google bullets', () => {
   const cv = fs.readFileSync(path.join(ROOT, '_data/cv.yml'), 'utf8');
-  assert.ok(cv.includes('kuny1240@gmail.com'));
+  assert.ok(cv.includes('href="mailto:kuny1240@gmail.com"'));
   assert.ok(cv.includes('Recursive Self-Improvement (RSI) for Inference'));
   assert.ok(cv.includes('RL Environments & Coding-Efficiency Post-Training'));
   assert.ok(cv.includes('Self-Evolving Multi-Agent Code Optimization'));

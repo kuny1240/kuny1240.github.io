@@ -8,7 +8,7 @@
     - name: Location
       value: "Cupertino / Sunnyvale, CA"
     - name: Email
-      value: kuny1240@gmail.com
+      value: '<a href="mailto:kuny1240@gmail.com">kuny1240@gmail.com</a>'
     - name: Links
       value: '<a href="https://scholar.google.com/citations?user=-BzQrlgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a> · <a href="https://github.com/kuny1240" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/kunyang1240/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://dblp.org/pid/63/1587-11.html" target="_blank" rel="noopener noreferrer">DBLP</a>'
 

@@ -140,6 +140,7 @@
 .dangan-topic-banner {
   position: relative;
   background: rgba(5, 5, 10, 0.84);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border-top: 1px solid #f43f5e;
   border-bottom: 1px solid #f43f5e;
@@ -329,6 +330,7 @@
   min-width: 305px;
   padding: 0.6rem 1.5rem 0.6rem 1.25rem;
   background: linear-gradient(90deg, rgba(76, 5, 25, 0.96), rgba(159, 18, 57, 0.84), rgba(225, 29, 72, 0.32));
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-top: 1px solid #fb7185;
   border-left: 3px solid #fb7185;
