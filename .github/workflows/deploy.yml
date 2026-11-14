@@ -19,15 +19,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2.2'
+        ruby-version: '3.2'
         bundler-cache: true
     - name: Install and Build 🔧
       run: |
-        npm install -g mermaid.cli
+        if ! command -v convert >/dev/null 2>&1; then
+          sudo apt-get update && sudo apt-get install -y imagemagick
+        fi
+        npm install -g mermaid.cli || true
         export JEKYLL_ENV=production
         bundle exec jekyll build
     - name: Deploy 🚀

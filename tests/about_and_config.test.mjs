@@ -44,6 +44,14 @@ test('news includes Google 2025 and UVA graduation 2024 and fixes legacy typos',
   assert.ok(!twc.includes('manuscipt'));
 });
 
+test('deploy.yml uses floating ruby-version 3.2, checkout v4, and ensures imagemagick is installed for ubuntu-26.04', () => {
+  const wf = fs.readFileSync(path.join(ROOT, '.github/workflows/deploy.yml'), 'utf8');
+  assert.doesNotMatch(wf, /ruby-version:\s*['"]?3\.2\.2['"]?/);
+  assert.match(wf, /ruby-version:\s*['"]3\.2['"]/);
+  assert.match(wf, /actions\/checkout@v4/);
+  assert.match(wf, /imagemagick/);
+});
+
 test('zero confidential leaks across site files', () => {
   assert.deepEqual(scanRepoForLeaks(ROOT), []);
 });
