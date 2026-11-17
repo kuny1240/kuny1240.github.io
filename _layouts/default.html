@@ -12,11 +12,17 @@
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
+    <!-- Precision Telemetry Ambient Backdrop -->
+    <div class="ambient-backdrop" aria-hidden="true">
+      <div class="ambient-aurora"></div>
+      <div class="ambient-grid"></div>
+    </div>
+
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container mt-5 geek-main-container">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
@@ -58,5 +64,6 @@
     {% include scripts/mathjax.html %}
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
+    {% include geek_shell.html %}
   </body>
 </html>

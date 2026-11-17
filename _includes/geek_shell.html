@@ -1,0 +1,22 @@
+<!-- Raycast-Style Command Palette Modal & Toast -->
+<div class="cmdk-backdrop" id="cmdkBackdrop">
+  <div class="cmdk-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmdk-input-wrap">
+      <span style="color: var(--accent-cyan); font-weight: 700;">&gt;</span>
+      <input type="text" class="cmdk-input" id="cmdkInput" placeholder="Jump to page, run RSI shell demo, switch theme, copy email..." autocomplete="off" />
+      <span class="kbd-chip">ESC</span>
+    </div>
+    <div class="cmdk-list" id="cmdkList"></div>
+    <div class="cmdk-footer">
+      <span>↑↓ Navigate · ↵ Execute</span>
+      <span>kuny1240.github.io // command-bus</span>
+    </div>
+  </div>
+</div>
+
+<div class="geek-toast" id="geekToast">✓ Copied to clipboard</div>
+
+<script>
+  window.GEEK_BASEURL = "{{ site.baseurl }}";
+</script>
+<script defer src="{{ '/assets/js/geek_shell.js' | relative_url }}"></script>

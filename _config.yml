@@ -255,7 +255,7 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt', 'assets/js/dangan_misc.js']
+  exclude: ['robots.txt', 'assets/js/dangan_misc.js', 'assets/js/geek_shell.js']
   uglifier_args:
     harmony: true
 

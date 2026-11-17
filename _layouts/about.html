@@ -5,15 +5,28 @@ layout: default
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+          <div class="telemetry-strip mono">
+            <span class="status-dot"></span>
+            <span>SYS.ONLINE</span>
+            <span>·</span>
+            <span>SUNNYVALE, CA</span>
+            <span>·</span>
+            <span id="livePstClock">PST LIVE</span>
+          </div>
+          <h1 class="post-title geek-hero-title">
+            <span class="hero-name-gradient">{% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}</span>
+            <span class="hero-handle mono">@kuny1240</span>
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+          <p class="desc geek-hero-subtitle" id="decodeSubtitle">{{ page.subtitle }}</p>
         </header>
 
         <article>
           {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+          <div class="profile portrait-frame-wrap spotlight-card float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+            <span class="reticle-corner tl"></span>
+            <span class="reticle-corner tr"></span>
+            <span class="reticle-corner bl"></span>
+            <span class="reticle-corner br"></span>
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
@@ -28,6 +41,10 @@ layout: default
               class=profile_image_class
               alt=page.profile.image -%}
             {% endif -%}
+            <div class="portrait-caption mono">
+              <span>ID // KY-2026</span>
+              <span>THU → UVA → GOOG</span>
+            </div>
             {%- if page.profile.address %}
             <div class="address">
               {{ page.profile.address }}
@@ -42,7 +59,13 @@ layout: default
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <div class="geek-sec-header">
+              <div class="geek-sec-left">
+                <span class="geek-sec-index">03 //</span>
+                <h2 class="geek-sec-title"><a href="{{ '/news/' | relative_url }}">Telemetry &amp; News</a></h2>
+              </div>
+              <span class="geek-sec-meta">git log --oneline</span>
+            </div>
             {%- include news.html limit=true %}
           {%- endif %}
 
@@ -54,7 +77,13 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <div class="geek-sec-header">
+              <div class="geek-sec-left">
+                <span class="geek-sec-index">04 //</span>
+                <h2 class="geek-sec-title"><a href="{{ '/publications/' | relative_url }}">Selected Publications</a></h2>
+              </div>
+              <a class="hud-btn" href="{{ '/publications/' | relative_url }}">View all 14 papers →</a>
+            </div>
             {%- include selected_papers.html %}
           {%- endif %}
 
@@ -73,7 +102,6 @@ layout: default
           {%- endif %}
         </article>
 
-
         <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=atnMmps71Xy_bPv1SEVMkt9WUIuHidAYRxVlhFn37zI"></script>
 
-</div>
+      </div>
